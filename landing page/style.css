@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: url(images/bgblue.jpg);
+}
+.navbar{
+    height: 8vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(84, 190, 190); */
+    box-shadow: 0 0 1rem blue;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+.logo{
+    color: blue;
+    font-size: 1.8rem;
+}
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links ul li a {
+    margin: 5px 10px;
+    font-size: 1.3rem;
+}
+.links ul li a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.navbar button{
+    padding: 10px 15px ;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    transition: 0.5s;
+    color: blue;
+    text-shadow: 0 0  7px white;
+    box-shadow: 0 0 1rem white;
+}
+
+.navbar button:hover{
+    color: white;
+    text-shadow: 0 0  7px blue;
+    box-shadow: 0 0 1rem blue;
+
+}
+.home-cont{
+    display: flex;
+}
+.img{
+    width: 100vw;
+height: 100vh;
+position: absolute;
+right: -30%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+padding-left: 20%;
+font-size: 3rem;
+}
+
+.img img{
+    width: 95vh;
+}
+.text{
+    /* width: 100vw; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3rem;
+    /* border: 1px solid ; */
+}
+.text small{
+    font-size: 1.5rem;
+    color: blue;
+    text-shadow: 0 0  7px white;
+}
+.text h2{
+    color: #fff;
+    text-shadow: 0 0  7px blue;
+}
+.text button{
+    padding: 10px 15px ;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+    color: blue;
+    text-shadow: 0 0  7px white;
+    box-shadow: 0 0 1rem white;
+    transition: 0.5s;
+}
+
+.text button:hover{
+    color: white;
+    text-shadow: 0 0  7px blue;
+    box-shadow: 0 0 1rem blue;
+
+}
+.classes{
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.classes .class-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.classes .class-box .box{
+    margin: 10px;
+    width: 300px;
+    height:300px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem blue;
+    background: url(images/transparent_box-removebg-preview.png) no-repeat center;
+}
+.box h2{
+    color: red;
+    /* text-shadow: 0 0  7px white; */
+}
+.box h5{
+    color: white;
+    text-shadow: 0 0 1rem blue;
+}
+.box h5 ul li{
+    list-style: circle;
+}
+.classes .class-box .box:hover{
+    box-shadow: none;
+    border: 1px solid blue;
+}
+footer{
+    transition: 0.5s;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+@media (max-width:991px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .links{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+}
